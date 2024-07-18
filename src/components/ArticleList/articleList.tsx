@@ -7,11 +7,11 @@ const ArticleList: React.FC = () => {
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error!</div>;
-    console.log(articles);
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
     return (
         <div>
-            {articles.hasOwnProperty('results') ? articles.results.map((article: any) => (
+            
+            {'results' in articles ? articles.results.map((article: any) => (
                 <Link key={article.id} to={`/article/${article.id}`}>
                     <h2>{article.title}</h2>
                 </Link>

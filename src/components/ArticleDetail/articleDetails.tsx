@@ -6,12 +6,14 @@ const ArticleDetail: React.FC = () => {
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error!</div>;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 
   return (
     <div>
-            {articles.hasOwnProperty('results') ? articles.results.map((article: any) => (
+            {'results' in articles ? articles.results.map((article: any) => (
                <>
-               <img src={article.media[0]["media-metadata"][0].url} />
+               {article?.media.length ?  <img src={article?.media[0]["media-metadata"][0]?.url} /> :'No media found'}
+              
                <h2>{article.title}</h2>
 
                </>
