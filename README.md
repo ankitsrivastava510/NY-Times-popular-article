@@ -1,4 +1,4 @@
-Sure, here's a basic low-level design for a system that uses the New York Times API to fetch and display articles:
+## Low-level design for a system that uses the New York Times API to fetch and display articles:
 
 1. **Frontend (React Application)**: The frontend is responsible for displaying the articles to the user. It consists of several components:
 
@@ -26,6 +26,13 @@ Please note that this is a very basic design and doesn't include many details th
 4. **CSS STYLING**: For styling we are using ChakraUI to display the most popular articles in boxes.
 
 No CSS styling is writing manually, all predefined CSS styles are are use from Chakra UI components.
+
+5. **Testing**: For testing we have done unit testing with component based testing.
+
+For unit testing jest and react testing library is used and we have use line of code, branches, functions
+For integration testing, cypress is use and configured.
+
+6. **Linting**: Linting is also configure to this app, so all code standard maintained.
 
 # NY Times Most Popular Articles Viewer
 
