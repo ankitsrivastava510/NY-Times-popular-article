@@ -59,7 +59,7 @@ To get started with this project, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/ankitsrivastava510/NY-Times-popular-article
 ```
 
 2. Install the dependencies:
@@ -74,7 +74,7 @@ npm install
 npm start
 ```
 
-The application should now be running at `http://localhost:3000`.
+The application should now be running at `http://localhost:5173`.
 
 ## Running Tests
 
@@ -91,8 +91,3 @@ To lint the code, use the following command:
 ```bash
 npm run lint
 ```
-
-
----
-
-Please replace `https://github.com/yourusername/yourrepository.git` with the actual URL of your repository. You can also add more sections to the README as needed, such as "Contributing", "License", or "Acknowledgements".
