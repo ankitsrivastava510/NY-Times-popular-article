@@ -19,21 +19,21 @@
 
 4. **Environment Variables**: The API key for the New York Times API is stored as an environment variable. This keeps the key secure and allows it to be easily changed if necessary.
 
-      This design assumes that the New York Times API provides an endpoint to fetch detailed information about a specific article by its ID, which is not the case. As I mentioned in my previous message, you may need to find another data source or use web scraping to get detailed information about specific articles.
+    - This design assumes that the New York Times API provides an endpoint to fetch detailed information about a specific article by its ID, which is not the case. As I mentioned in my previous message, you may need to find another data source or use web scraping to get detailed information about specific articles.
 
-      Please note that this is a very basic design and doesn't include many details that would be necessary in a real-world application, such as error handling, caching, authentication, and more.
 
 4. **CSS STYLING**: For styling we are using ChakraUI to display the most popular articles in boxes.
 
-      No CSS styling is writing manually, all predefined CSS styles are are use from Chakra UI components.
+   - No CSS styling is writing manually, all predefined CSS styles are are use from Chakra UI components.
 
 5. **Testing**: For testing we have done unit testing with component based testing.
 
-      For unit testing jest and react testing library is used and we have use line of code, branches, functions
-      For integration testing, cypress is use and configured.
+   - For unit testing jest and react testing library is used and we have use line of code, branches, functions
+   - For integration testing, cypress is use and configured.
 
 6. **Linting**: Linting is also configure to this app, so all code standard maintained.
 
+   Please note that this is a very basic design and doesn't include many details that would be necessary in a real-world application, such as error handling, caching, authentication, and more.
 # NY Times Most Popular Articles Viewer
 
 This project is a simple React application that fetches and displays the most popular articles from the NY Times API.
