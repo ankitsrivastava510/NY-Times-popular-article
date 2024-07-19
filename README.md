@@ -1,6 +1,31 @@
-Sure, here's a basic template for a README file for your project:
+Sure, here's a basic low-level design for a system that uses the New York Times API to fetch and display articles:
 
----
+1. **Frontend (React Application)**: The frontend is responsible for displaying the articles to the user. It consists of several components:
+
+   - `ArticleList`: Fetches the list of articles from the backend and displays them. Each article in the list is represented by an `ArticleList` component.
+   
+   - `ArticleList`: Displays a brief overview of an article (e.g., title, images). When clicked, it navigates to the `ArticleDetail` page for that article.
+   
+   - `ArticleDetail`: Fetches all the articles again as New York times don't provide article fetch by ID.
+
+   - `useFetch`: Use one of the hooks in react to call api and fetch data. This is common is use commonly in all component to call apis.
+
+2. **Backend (Express Server)**: Using New York times apis to fetch and display articles:
+
+   - `mostpopular/v2/viewed/1.json`: Fetches the most popular articles from the New York Times API and returns them to the frontend.
+   
+   
+3. **New York Times API**: The backend communicates with the New York Times API to fetch article data. It uses the `Most Popular API` to fetch the most popular articles and the `Article Search API` to fetch detailed information about a specific article.
+
+4. **Environment Variables**: The API key for the New York Times API is stored as an environment variable. This keeps the key secure and allows it to be easily changed if necessary.
+
+This design assumes that the New York Times API provides an endpoint to fetch detailed information about a specific article by its ID, which is not the case. As I mentioned in my previous message, you may need to find another data source or use web scraping to get detailed information about specific articles.
+
+Please note that this is a very basic design and doesn't include many details that would be necessary in a real-world application, such as error handling, caching, authentication, and more.
+
+4. **CSS STYLING**: For styling we are using ChakraUI to display the most popular articles in boxes.
+
+No CSS styling is writing manually, all predefined CSS styles are are use from Chakra UI components.
 
 # NY Times Most Popular Articles Viewer
 
@@ -67,11 +92,6 @@ To lint the code, use the following command:
 npm run lint
 ```
 
-To generate a linting report, use the following command:
-
-```bash
-npm run lint:report
-```
 
 ---
 
